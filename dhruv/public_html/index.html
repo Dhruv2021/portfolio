@@ -26,7 +26,7 @@
                 </li>
                 <li class="item">
                     <a class="link" href="#portfolio">Portfolio</a>
-                </li>
+                </li>   
                 <li class="item">
                     <a class="link" href="#service">Service</a>
                 </li>
@@ -57,7 +57,7 @@
             </h1>
             <p class="header-subtitle">Fullstack Web Developer</p>            
 
-            <button class="btn btn-primary" > Visit My Works</button>
+            <button class="btn btn-primary" onclick="scrollToPortfolio()">Visit My Works</button>
         </div>              
     </header><!-- end of page header -->
 
@@ -135,9 +135,9 @@
             <h6 class="section-title mb-6">Portfolio</h6>
             <!-- row -->
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4"> 
                     <a href="https://dhruv2021.github.io/talkbuddy/main.html" target="_blank" class="portfolio-card">
-                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <img src="assets/imgs/talkbuddy.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Talkbuddy</h5>
@@ -148,7 +148,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="https://www.instagram.com/promertia/" target="_blank" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img class="portfolio-card-img" src="assets/imgs/promertia-logo.png" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Promertia</h5>
@@ -159,7 +159,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="https://dhruv2021.github.io/prt2/dhruv/pic.html" target="_blank" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <img class="portfolio-card-img" src="assets/imgs/Screenshot 2023-09-28 223829.png" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Photography</h5>
@@ -282,6 +282,15 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+   
+   <script>
+        function scrollToPortfolio() {
+            const portfolioSection = document.getElementById('portfolio');
+            if (portfolioSection) {
+                portfolioSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 
 </body>
 </html>
